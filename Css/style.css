@@ -1,0 +1,380 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a.navbar-brand.fw-semibold.fs-4{
+  color: saddlebrown;
+}
+
+.offcanvas {
+  background-color: #1e293b;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > li:hover {
+    background-color: #0dcaf0;
+  }
+}
+
+.body-login {
+    background-image: url("../img/Fondo-Login.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del formulario */
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;;
+    border-radius: 10px;
+    width: 400px;
+    height: 360px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-login{
+  top: 100px;
+  
+}
+
+/* Título del login */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos de los inputs */
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos del botón */
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #662549;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #26425A;
+}
+
+.bi{
+    width: 30px;
+    height: 30px;
+}
+
+div.container-fluid{
+  background-color:#451952;
+}
+a.nav-link{
+  color: #fff;
+}
+
+span#bd-theme-text.d-lg-none.ms-2{
+  color:#fff;
+}
+
+div.offcanvas-header{
+  background-color: #451952;
+}
+
+div.offcanvas-body.d-flex.flex-column.justify-content-between.px-0{
+  background-color: #451952;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark{
+  background-color: #451952;
+}
+
+a.navbar-brand.text-info.fw-semibold.fs-4{
+  color: #fff;
+  
+}
+
+.float-button {
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #662549; /* Celeste */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 75px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.float-button:hover {
+  background-color: #AE445A;
+}
+
+div.card.border-info.mb-3 {
+  margin: 30px;
+  background-color: 00BFFF;
+}
+
+.icons-tarea{
+  display: flex;
+  margin-left: 15px;
+}
+
+i.bi.bi-pencil::before{
+  display: flex;
+  margin-top: -35px;
+  justify-content: end;
+}
+
+div.card-header{
+  font-size: 25px;
+}
+
+
+
+  
+/*MODAL*/
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #252525;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.modal_container{
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  background-color: #101010;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+}
+
+.modal_titulo{
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.modal_parrafo{
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.modal_cerrar{
+  text-decoration: none;
+  color: #fff;
+  background-color: #662549;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300px;
+  transition: background-color .3s;
+}
+
+.modal_cerrar:hover{
+  color: #fff;
+  background-color: #AE445A;
+}
+
+form {
+  background-color: #252525;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #662549;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+  background-color: #AE445A;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Estilos para el botón "Agregar Tarea" */
+button[type="submit"] {
+  background-color: #662549; /* Color de fondo verde */
+  color: white; /* Texto en blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #AE445A; /* Color más oscuro al pasar el cursor */
+}
+
+button[type="submit"]:active {
+  background-color: #662549; /* Color cuando se hace clic */
+  transform: scale(0.98); /* Efecto de click (ligeramente más pequeño) */
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.delete-btn  {
+  background-color: #662549; /* Color amarillo */
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+
+/* Estilos para el contenedor de la lista de tareas */
+.task-list {
+  width: 100%;
+  max-width: 800px; /* Ancho máximo para que no ocupe toda la pantalla */
+  margin: 20px auto; /* Centrado y margen superior/inferior */
+  padding: 20px; /* Espaciado interno */
+  background-color: #343232; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el título */
+.task-list h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center; /* Centrar el texto del título */
+  margin-bottom: 20px;
+}
+
+h3,p{
+  color: #fff;
+}
+
+/* Estilos para el contenedor de las tareas */
+#taskContainer {
+  display: flex;
+  flex-direction: column; /* Colocar tareas una debajo de la otra */
+  gap: 15px; /* Espacio entre cada tarea */
+}
+
+/* Estilos para cada tarea (puedes adaptarlos al diseño que desees) */
+.task-item {
+  background-color: #ffffff; /* Fondo blanco para las tareas */
+  border-left: 5px solid #007bff; /* Barra de color en el lado izquierdo */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  display: flex;
+  justify-content: space-between; /* Botón de edición/eliminación alineado a la derecha */
+  align-items: center;
+}
+
+/* Estilos para el contenido dentro de cada tarea */
+.task-item p {
+  margin: 0; /* Elimina el margen de los párrafos */
+  color: #333; /* Texto oscuro */
+}
+
+/* Botones de acción (editar/eliminar) */
+.task-item button {
+  background-color: transparent;
+  border: none;
+  color: #007bff; /* Color del icono o texto del botón */
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.task-item button:hover {
+  color: #0056b3; /* Color más oscuro en hover */
+}
+
+
